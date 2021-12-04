@@ -1,0 +1,81 @@
+body{
+    background-color: tomato;
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container{
+    border: 5px solid yellow;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+}
+
+.container>*{
+    background-color: aqua;
+    border: 5px solid black;
+}
+
+.align-self-item{
+    grid-template: repeat(3, 100px)/1fr 1fr;
+    align-items: start;
+    justify-items: center;
+}
+
+/* Task 1 */
+.align-self-item div:nth-child(even){
+    align-self: center;
+    justify-self: center;
+}
+
+.align-self-item div:nth-child(1){
+    justify-self: start;
+    align-self: center;
+}
+
+.align-self-item div:nth-child(3){
+    justify-self: end;
+    align-self: center;
+}
+
+.align-self-item div:nth-child(5){
+    justify-self: start;
+    align-self: center;
+}
+
+
+
+/* Tack2 */
+.place-content{
+    height: 400px;
+    grid-template: 100px 100px 100px/100px 100px;
+    /* align-content: end; */
+    place-content: space-between;
+}
+
+/* Task3 */
+.place-self{
+    grid-template: 50px 50px 50px/ 50px 50px;
+    place-items: center stretch;
+    place-content: space-between;
+}
+
+.place-self div:nth-child(even){
+    place-self: stretch center;
+}
+
+/* Task4 */
+
+.alignn-self{
+    grid-template: 60px 60px 60px/ 60px 60px;
+}
+
+.alignn-self div:nth-child(odd){
+    align-self: stretch;
+}
+.alignn-self div:nth-child(even){
+    align-self: end;
+}

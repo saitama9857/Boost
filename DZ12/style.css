@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* @media screen and (min-width: 960px) {
+
+} */
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: darkcyan;
+    padding: 20px 0;
+}
+
+header .menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+header .menu a{
+    width: 200px;
+    background-color: orange;
+    text-align: center;
+    border-radius: 5px;
+    padding: 14px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    box-shadow: 0 0 10px 5 black;
+}
+
+header .menu a:hover{
+    background-color: tomato;
+    color: black;
+}
+
+
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: tomato;
+    height: 400px;
+    width: 400px;
+
+}
+
+.box div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
